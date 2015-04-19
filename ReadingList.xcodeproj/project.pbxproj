@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABAB14191AE152B000535173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB14181AE152B000535173 /* main.m */; };
+		ABAB141C1AE152B000535173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB141B1AE152B000535173 /* AppDelegate.m */; };
+		ABAB14221AE152B000535173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAB14201AE152B000535173 /* Main.storyboard */; };
+		ABAB14241AE152B000535173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAB14231AE152B000535173 /* Images.xcassets */; };
+		ABAB14331AE152B000535173 /* ReadingListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB14321AE152B000535173 /* ReadingListTests.m */; };
+		ABAB157D1AE1897300535173 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB15611AE1897200535173 /* Author.m */; };
+		ABAB157E1AE1897300535173 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB15631AE1897200535173 /* Book.m */; };
+		ABAB157F1AE1897300535173 /* BooksAndAuthors.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15641AE1897200535173 /* BooksAndAuthors.plist */; };
+		ABAB15801AE1897300535173 /* Austen.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15661AE1897200535173 /* Austen.png */; };
+		ABAB15811AE1897300535173 /* Bacon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15671AE1897200535173 /* Bacon.png */; };
+		ABAB15821AE1897300535173 /* Carroll.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15681AE1897200535173 /* Carroll.png */; };
+		ABAB15831AE1897300535173 /* Dostoevsky.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15691AE1897200535173 /* Dostoevsky.png */; };
+		ABAB15841AE1897300535173 /* Eliot.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB156A1AE1897200535173 /* Eliot.png */; };
+		ABAB15851AE1897300535173 /* Emerson.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB156B1AE1897200535173 /* Emerson.png */; };
+		ABAB15861AE1897300535173 /* Hemingway.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB156C1AE1897200535173 /* Hemingway.png */; };
+		ABAB15871AE1897300535173 /* Milne.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB156D1AE1897200535173 /* Milne.png */; };
+		ABAB15881AE1897300535173 /* More.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB156E1AE1897200535173 /* More.png */; };
+		ABAB15891AE1897300535173 /* Newton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB156F1AE1897200535173 /* Newton.png */; };
+		ABAB158B1AE1897300535173 /* Shakespeare.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15711AE1897200535173 /* Shakespeare.png */; };
+		ABAB158C1AE1897300535173 /* Thoreau.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15721AE1897200535173 /* Thoreau.jpg */; };
+		ABAB158D1AE1897300535173 /* Tolstoy.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15731AE1897200535173 /* Tolstoy.png */; };
+		ABAB158E1AE1897300535173 /* Twain.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15741AE1897200535173 /* Twain.png */; };
+		ABAB158F1AE1897300535173 /* Wells.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15751AE1897200535173 /* Wells.png */; };
+		ABAB15901AE1897300535173 /* Whitman.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAB15761AE1897200535173 /* Whitman.png */; };
+		ABAB15921AE1897300535173 /* ModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB15791AE1897300535173 /* ModelObject.m */; };
+		ABAB15931AE1897300535173 /* ReadingList.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB157B1AE1897300535173 /* ReadingList.m */; };
+		ABEF85881AE19706003754E0 /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF85871AE19706003754E0 /* RELReadingListController.m */; };
+		ABEF858B1AE1ACD9003754E0 /* RELDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF858A1AE1ACD9003754E0 /* RELDataSource.m */; };
+		ABEF858E1AE1BB6C003754E0 /* RELViewBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF858D1AE1BB6C003754E0 /* RELViewBookController.m */; };
+		ABEF85911AE1D0DF003754E0 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF85901AE1D0DF003754E0 /* RELEditBookController.m */; };
+		ABEF85941AE40826003754E0 /* UIImage+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF85931AE40826003754E0 /* UIImage+RELAdditions.m */; };
+		ABEF85971AE41944003754E0 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF85961AE41944003754E0 /* RELAddBookController.m */; };
+		ABEF859D1AE429AF003754E0 /* RELFileUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF859C1AE429AF003754E0 /* RELFileUtilities.m */; };
+		ABEF85A11AE43916003754E0 /* DefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEF85A01AE43916003754E0 /* DefaultImage.png */; };
+		ABEF85A41AE44CD4003754E0 /* NSObject+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF85A31AE44CD4003754E0 /* NSObject+RELAdditions.m */; };
+		ABEF85A71AE44F07003754E0 /* NSString+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF85A61AE44F07003754E0 /* NSString+RELAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABAB142D1AE152B000535173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABAB140B1AE152B000535173 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABAB14121AE152B000535173;
+			remoteInfo = ReadingList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABAB14131AE152B000535173 /* ReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAB14171AE152B000535173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAB14181AE152B000535173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABAB141A1AE152B000535173 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABAB141B1AE152B000535173 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABAB14211AE152B000535173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABAB14231AE152B000535173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABAB142C1AE152B000535173 /* ReadingListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadingListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAB14311AE152B000535173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAB14321AE152B000535173 /* ReadingListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadingListTests.m; sourceTree = "<group>"; };
+		ABAB15601AE1897200535173 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		ABAB15611AE1897200535173 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		ABAB15621AE1897200535173 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		ABAB15631AE1897200535173 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		ABAB15641AE1897200535173 /* BooksAndAuthors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = BooksAndAuthors.plist; sourceTree = "<group>"; };
+		ABAB15661AE1897200535173 /* Austen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Austen.png; sourceTree = "<group>"; };
+		ABAB15671AE1897200535173 /* Bacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bacon.png; sourceTree = "<group>"; };
+		ABAB15681AE1897200535173 /* Carroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carroll.png; sourceTree = "<group>"; };
+		ABAB15691AE1897200535173 /* Dostoevsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dostoevsky.png; sourceTree = "<group>"; };
+		ABAB156A1AE1897200535173 /* Eliot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eliot.png; sourceTree = "<group>"; };
+		ABAB156B1AE1897200535173 /* Emerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emerson.png; sourceTree = "<group>"; };
+		ABAB156C1AE1897200535173 /* Hemingway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hemingway.png; sourceTree = "<group>"; };
+		ABAB156D1AE1897200535173 /* Milne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milne.png; sourceTree = "<group>"; };
+		ABAB156E1AE1897200535173 /* More.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = More.png; sourceTree = "<group>"; };
+		ABAB156F1AE1897200535173 /* Newton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Newton.png; sourceTree = "<group>"; };
+		ABAB15711AE1897200535173 /* Shakespeare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shakespeare.png; sourceTree = "<group>"; };
+		ABAB15721AE1897200535173 /* Thoreau.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thoreau.jpg; sourceTree = "<group>"; };
+		ABAB15731AE1897200535173 /* Tolstoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tolstoy.png; sourceTree = "<group>"; };
+		ABAB15741AE1897200535173 /* Twain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twain.png; sourceTree = "<group>"; };
+		ABAB15751AE1897200535173 /* Wells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wells.png; sourceTree = "<group>"; };
+		ABAB15761AE1897200535173 /* Whitman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Whitman.png; sourceTree = "<group>"; };
+		ABAB15781AE1897300535173 /* ModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelObject.h; sourceTree = "<group>"; };
+		ABAB15791AE1897300535173 /* ModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelObject.m; sourceTree = "<group>"; };
+		ABAB157A1AE1897300535173 /* ReadingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingList.h; sourceTree = "<group>"; };
+		ABAB157B1AE1897300535173 /* ReadingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingList.m; sourceTree = "<group>"; };
+		ABEF85861AE19706003754E0 /* RELReadingListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELReadingListController.h; sourceTree = "<group>"; };
+		ABEF85871AE19706003754E0 /* RELReadingListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELReadingListController.m; sourceTree = "<group>"; };
+		ABEF85891AE1ACD9003754E0 /* RELDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELDataSource.h; sourceTree = "<group>"; };
+		ABEF858A1AE1ACD9003754E0 /* RELDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELDataSource.m; sourceTree = "<group>"; };
+		ABEF858C1AE1BB6C003754E0 /* RELViewBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELViewBookController.h; sourceTree = "<group>"; };
+		ABEF858D1AE1BB6C003754E0 /* RELViewBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELViewBookController.m; sourceTree = "<group>"; };
+		ABEF858F1AE1D0DF003754E0 /* RELEditBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
+		ABEF85901AE1D0DF003754E0 /* RELEditBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		ABEF85921AE40826003754E0 /* UIImage+RELAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RELAdditions.h"; sourceTree = "<group>"; };
+		ABEF85931AE40826003754E0 /* UIImage+RELAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RELAdditions.m"; sourceTree = "<group>"; };
+		ABEF85951AE41944003754E0 /* RELAddBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		ABEF85961AE41944003754E0 /* RELAddBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		ABEF85981AE41D51003754E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ABEF859B1AE429AF003754E0 /* RELFileUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELFileUtilities.h; sourceTree = "<group>"; };
+		ABEF859C1AE429AF003754E0 /* RELFileUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELFileUtilities.m; sourceTree = "<group>"; };
+		ABEF85A01AE43916003754E0 /* DefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultImage.png; sourceTree = "<group>"; };
+		ABEF85A21AE44CD4003754E0 /* NSObject+RELAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RELAdditions.h"; sourceTree = "<group>"; };
+		ABEF85A31AE44CD4003754E0 /* NSObject+RELAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RELAdditions.m"; sourceTree = "<group>"; };
+		ABEF85A51AE44F07003754E0 /* NSString+RELAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RELAdditions.h"; sourceTree = "<group>"; };
+		ABEF85A61AE44F07003754E0 /* NSString+RELAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RELAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABAB14101AE152B000535173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAB14291AE152B000535173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABAB140A1AE152B000535173 = {
+			isa = PBXGroup;
+			children = (
+				ABEF85981AE41D51003754E0 /* README.md */,
+				ABAB155F1AE1897200535173 /* ReadingListModel */,
+				ABAB14151AE152B000535173 /* ReadingList */,
+				ABAB142F1AE152B000535173 /* ReadingListTests */,
+				ABAB14141AE152B000535173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABAB14141AE152B000535173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB14131AE152B000535173 /* ReadingList.app */,
+				ABAB142C1AE152B000535173 /* ReadingListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABAB14151AE152B000535173 /* ReadingList */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB141A1AE152B000535173 /* AppDelegate.h */,
+				ABAB141B1AE152B000535173 /* AppDelegate.m */,
+				ABEF859B1AE429AF003754E0 /* RELFileUtilities.h */,
+				ABEF859C1AE429AF003754E0 /* RELFileUtilities.m */,
+				ABEF85921AE40826003754E0 /* UIImage+RELAdditions.h */,
+				ABEF85931AE40826003754E0 /* UIImage+RELAdditions.m */,
+				ABEF85891AE1ACD9003754E0 /* RELDataSource.h */,
+				ABEF858A1AE1ACD9003754E0 /* RELDataSource.m */,
+				ABEF85861AE19706003754E0 /* RELReadingListController.h */,
+				ABEF85871AE19706003754E0 /* RELReadingListController.m */,
+				ABEF858C1AE1BB6C003754E0 /* RELViewBookController.h */,
+				ABEF858D1AE1BB6C003754E0 /* RELViewBookController.m */,
+				ABEF858F1AE1D0DF003754E0 /* RELEditBookController.h */,
+				ABEF85901AE1D0DF003754E0 /* RELEditBookController.m */,
+				ABEF85951AE41944003754E0 /* RELAddBookController.h */,
+				ABEF85961AE41944003754E0 /* RELAddBookController.m */,
+				ABAB14201AE152B000535173 /* Main.storyboard */,
+				ABAB14231AE152B000535173 /* Images.xcassets */,
+				ABAB14161AE152B000535173 /* Supporting Files */,
+			);
+			path = ReadingList;
+			sourceTree = "<group>";
+		};
+		ABAB14161AE152B000535173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB14171AE152B000535173 /* Info.plist */,
+				ABAB14181AE152B000535173 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABAB142F1AE152B000535173 /* ReadingListTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB14321AE152B000535173 /* ReadingListTests.m */,
+				ABAB14301AE152B000535173 /* Supporting Files */,
+			);
+			path = ReadingListTests;
+			sourceTree = "<group>";
+		};
+		ABAB14301AE152B000535173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB14311AE152B000535173 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABAB155F1AE1897200535173 /* ReadingListModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB15641AE1897200535173 /* BooksAndAuthors.plist */,
+				ABEF85A21AE44CD4003754E0 /* NSObject+RELAdditions.h */,
+				ABEF85A31AE44CD4003754E0 /* NSObject+RELAdditions.m */,
+				ABEF85A51AE44F07003754E0 /* NSString+RELAdditions.h */,
+				ABEF85A61AE44F07003754E0 /* NSString+RELAdditions.m */,
+				ABAB15781AE1897300535173 /* ModelObject.h */,
+				ABAB15791AE1897300535173 /* ModelObject.m */,
+				ABAB15601AE1897200535173 /* Author.h */,
+				ABAB15611AE1897200535173 /* Author.m */,
+				ABAB15621AE1897200535173 /* Book.h */,
+				ABAB15631AE1897200535173 /* Book.m */,
+				ABAB157A1AE1897300535173 /* ReadingList.h */,
+				ABAB157B1AE1897300535173 /* ReadingList.m */,
+				ABAB15651AE1897200535173 /* Images */,
+			);
+			path = ReadingListModel;
+			sourceTree = "<group>";
+		};
+		ABAB15651AE1897200535173 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF85A01AE43916003754E0 /* DefaultImage.png */,
+				ABAB15661AE1897200535173 /* Austen.png */,
+				ABAB15671AE1897200535173 /* Bacon.png */,
+				ABAB15681AE1897200535173 /* Carroll.png */,
+				ABAB15691AE1897200535173 /* Dostoevsky.png */,
+				ABAB156A1AE1897200535173 /* Eliot.png */,
+				ABAB156B1AE1897200535173 /* Emerson.png */,
+				ABAB156C1AE1897200535173 /* Hemingway.png */,
+				ABAB156D1AE1897200535173 /* Milne.png */,
+				ABAB156E1AE1897200535173 /* More.png */,
+				ABAB156F1AE1897200535173 /* Newton.png */,
+				ABAB15711AE1897200535173 /* Shakespeare.png */,
+				ABAB15721AE1897200535173 /* Thoreau.jpg */,
+				ABAB15731AE1897200535173 /* Tolstoy.png */,
+				ABAB15741AE1897200535173 /* Twain.png */,
+				ABAB15751AE1897200535173 /* Wells.png */,
+				ABAB15761AE1897200535173 /* Whitman.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABAB14121AE152B000535173 /* ReadingList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABAB14361AE152B000535173 /* Build configuration list for PBXNativeTarget "ReadingList" */;
+			buildPhases = (
+				ABAB140F1AE152B000535173 /* Sources */,
+				ABAB14101AE152B000535173 /* Frameworks */,
+				ABAB14111AE152B000535173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadingList;
+			productName = ReadingList;
+			productReference = ABAB14131AE152B000535173 /* ReadingList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABAB142B1AE152B000535173 /* ReadingListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABAB14391AE152B000535173 /* Build configuration list for PBXNativeTarget "ReadingListTests" */;
+			buildPhases = (
+				ABAB14281AE152B000535173 /* Sources */,
+				ABAB14291AE152B000535173 /* Frameworks */,
+				ABAB142A1AE152B000535173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABAB142E1AE152B000535173 /* PBXTargetDependency */,
+			);
+			name = ReadingListTests;
+			productName = ReadingListTests;
+			productReference = ABAB142C1AE152B000535173 /* ReadingListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABAB140B1AE152B000535173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "About Objects";
+				TargetAttributes = {
+					ABAB14121AE152B000535173 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					ABAB142B1AE152B000535173 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = ABAB14121AE152B000535173;
+					};
+				};
+			};
+			buildConfigurationList = ABAB140E1AE152B000535173 /* Build configuration list for PBXProject "ReadingList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABAB140A1AE152B000535173;
+			productRefGroup = ABAB14141AE152B000535173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABAB14121AE152B000535173 /* ReadingList */,
+				ABAB142B1AE152B000535173 /* ReadingListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABAB14111AE152B000535173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAB15831AE1897300535173 /* Dostoevsky.png in Resources */,
+				ABAB15841AE1897300535173 /* Eliot.png in Resources */,
+				ABAB15901AE1897300535173 /* Whitman.png in Resources */,
+				ABEF85A11AE43916003754E0 /* DefaultImage.png in Resources */,
+				ABAB158F1AE1897300535173 /* Wells.png in Resources */,
+				ABAB158C1AE1897300535173 /* Thoreau.jpg in Resources */,
+				ABAB15851AE1897300535173 /* Emerson.png in Resources */,
+				ABAB15891AE1897300535173 /* Newton.png in Resources */,
+				ABAB158B1AE1897300535173 /* Shakespeare.png in Resources */,
+				ABAB157F1AE1897300535173 /* BooksAndAuthors.plist in Resources */,
+				ABAB15821AE1897300535173 /* Carroll.png in Resources */,
+				ABAB15861AE1897300535173 /* Hemingway.png in Resources */,
+				ABAB15881AE1897300535173 /* More.png in Resources */,
+				ABAB15811AE1897300535173 /* Bacon.png in Resources */,
+				ABAB15801AE1897300535173 /* Austen.png in Resources */,
+				ABAB15871AE1897300535173 /* Milne.png in Resources */,
+				ABAB158D1AE1897300535173 /* Tolstoy.png in Resources */,
+				ABAB158E1AE1897300535173 /* Twain.png in Resources */,
+				ABAB14221AE152B000535173 /* Main.storyboard in Resources */,
+				ABAB14241AE152B000535173 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAB142A1AE152B000535173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABAB140F1AE152B000535173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAB157E1AE1897300535173 /* Book.m in Sources */,
+				ABEF85A71AE44F07003754E0 /* NSString+RELAdditions.m in Sources */,
+				ABAB141C1AE152B000535173 /* AppDelegate.m in Sources */,
+				ABEF85881AE19706003754E0 /* RELReadingListController.m in Sources */,
+				ABAB15931AE1897300535173 /* ReadingList.m in Sources */,
+				ABEF858E1AE1BB6C003754E0 /* RELViewBookController.m in Sources */,
+				ABEF85A41AE44CD4003754E0 /* NSObject+RELAdditions.m in Sources */,
+				ABEF85971AE41944003754E0 /* RELAddBookController.m in Sources */,
+				ABAB15921AE1897300535173 /* ModelObject.m in Sources */,
+				ABAB14191AE152B000535173 /* main.m in Sources */,
+				ABAB157D1AE1897300535173 /* Author.m in Sources */,
+				ABEF858B1AE1ACD9003754E0 /* RELDataSource.m in Sources */,
+				ABEF85911AE1D0DF003754E0 /* RELEditBookController.m in Sources */,
+				ABEF859D1AE429AF003754E0 /* RELFileUtilities.m in Sources */,
+				ABEF85941AE40826003754E0 /* UIImage+RELAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAB14281AE152B000535173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAB14331AE152B000535173 /* ReadingListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABAB142E1AE152B000535173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABAB14121AE152B000535173 /* ReadingList */;
+			targetProxy = ABAB142D1AE152B000535173 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABAB14201AE152B000535173 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABAB14211AE152B000535173 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABAB14341AE152B000535173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABAB14351AE152B000535173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABAB14371AE152B000535173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReadingList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABAB14381AE152B000535173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReadingList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ABAB143A1AE152B000535173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReadingListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadingList.app/ReadingList";
+			};
+			name = Debug;
+		};
+		ABAB143B1AE152B000535173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReadingListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadingList.app/ReadingList";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABAB140E1AE152B000535173 /* Build configuration list for PBXProject "ReadingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABAB14341AE152B000535173 /* Debug */,
+				ABAB14351AE152B000535173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABAB14361AE152B000535173 /* Build configuration list for PBXNativeTarget "ReadingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABAB14371AE152B000535173 /* Debug */,
+				ABAB14381AE152B000535173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABAB14391AE152B000535173 /* Build configuration list for PBXNativeTarget "ReadingListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABAB143A1AE152B000535173 /* Debug */,
+				ABAB143B1AE152B000535173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABAB140B1AE152B000535173 /* Project object */;
+}
