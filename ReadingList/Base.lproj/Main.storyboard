@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-608" y="-101"/>
         </scene>
-        <!--My Reading List-->
+        <!--Reading List-->
         <scene sceneID="aJK-qq-3xI">
             <objects>
                 <tableViewController id="RG1-77-NY4" customClass="RELReadingListController" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <outlet property="delegate" destination="RG1-77-NY4" id="chg-Jr-llc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Reading List" id="mhZ-ho-5rl">
+                    <navigationItem key="navigationItem" title="Reading List" id="mhZ-ho-5rl">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="utu-SP-6b8">
                             <connections>
                                 <segue destination="WtB-1b-0gC" kind="modal" identifier="AddBook" id="JrM-Hn-y7i"/>

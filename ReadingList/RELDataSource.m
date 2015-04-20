@@ -9,8 +9,9 @@
 
 @interface RELDataSource ()
 
-@property (copy, readwrite, nonatomic) NSString *title;
+@property (strong, readwrite, nonatomic) ReadingList *readingList;
 @property (strong, nonatomic) NSMutableArray *books;
+
 @property (readonly, nonatomic) NSString *storePath;
 
 @end
@@ -18,26 +19,29 @@
 
 @implementation RELDataSource
 
-#pragma mark - Creating and Initializing
-
-- (instancetype)init
-{
-    if (!(self = [super init])) return nil;
-    
-    ReadingList *readingList = [self readingList];
-    _title = [readingList.title copy];
-    _books = [readingList.books mutableCopy];
-    
-    return self;
-}
-
-
 #pragma mark - File-based Persistence
 
 - (NSString *)storeName { return @"BooksAndAuthors"; }
 - (NSString *)storePath { return RELPathForDocument(self.storeName, @"plist"); }
 
+/// Returns a mutable proxy for the reading list's books array.
+//
+- (NSMutableArray *)books
+{
+    return [self.readingList mutableArrayValueForKey:@"books"];
+}
+
 - (ReadingList *)readingList
+{
+    if (_readingList == nil)
+    {
+        [self loadReadingList];
+    }
+    
+    return _readingList;
+}
+
+- (void)loadReadingList
 {
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:self.storePath];
     
@@ -46,16 +50,12 @@
         dict = [NSDictionary dictionaryWithContentsOfFile:path];
     }
     
-    return [ReadingList modelObjectWithDictionary:dict];
+    self.readingList = [ReadingList modelObjectWithDictionary:dict];
 }
 
 - (void)save
 {
-    ReadingList *newReadingList = [[ReadingList alloc] init];
-    newReadingList.title = self.title;
-    newReadingList.books = self.books;
-    
-    [newReadingList.dictionaryRepresentation writeToFile:self.storePath atomically:YES];
+    [self.readingList.dictionaryRepresentation writeToFile:self.storePath atomically:YES];
 }
 
 
