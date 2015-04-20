@@ -1,14 +1,13 @@
 #import <UIKit/UIKit.h>
 
+@class ReadingList;
 @class Book;
 
 @interface RELDataSource : NSObject <UITableViewDataSource>
 
-@property (readonly, nonatomic) NSString *storeName;
-//@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (readonly, nonatomic) ReadingList *readingList;
 
-@property (copy, readonly, nonatomic) NSString *title;
-//@property (readonly, nonatomic) NSArray *books;
+@property (readonly, nonatomic) NSString *storeName;
 
 - (Book *)bookAtIndexPath:(NSIndexPath *)indexPath;
 

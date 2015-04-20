@@ -12,8 +12,6 @@
 
 @interface RELAddBookController ()
 
-@property (strong, readwrite, nonatomic) Book *book;
-
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UITextField *yearField;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
@@ -24,27 +22,12 @@
 
 @implementation RELAddBookController
 
-- (void)transferValues
+- (NSDictionary *)bookInfo
 {
-    NSDictionary *dict = @{ BookKeys.title: self.titleField.text,
-                            BookKeys.year: self.yearField.text,
-                            BookKeys.author: @{ AuthorKeys.firstName: self.firstNameField.text,
-                                                AuthorKeys.lastName: self.lastNameField.text }};
-    
-    self.completionBlock(dict);
+    return @{ BookKeys.title: self.titleField.text,
+              BookKeys.year: self.yearField.text,
+              BookKeys.author: @{ AuthorKeys.firstName: self.firstNameField.text,
+                                  AuthorKeys.lastName: self.lastNameField.text }};
 }
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"Done"]) {
-        [self transferValues];
-    }
-
-    // Breaks potential retain cycle.
-    //
-    self.completionBlock = nil;
-}
-
 
 @end

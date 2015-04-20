@@ -3,9 +3,10 @@
 #import "RELAddBookController.h"
 #import "RELDataSource.h"
 
+#import "ReadingList.h"
+
 @interface RELReadingListController ()
 
-//@property (strong, nonatomic) IBOutlet RELDataSource *dataSource;
 @property (readonly, nonatomic) RELDataSource *dataSource;
 @property (readonly, nonatomic) NSIndexPath *insertionIndexPath;
 
@@ -20,27 +21,34 @@
 }
 
 
+#pragma mark - Unwind Segues
+
+- (IBAction)doneEditingBook:(UIStoryboardSegue *)segue {
+    [self.dataSource save];
+    [self.tableView reloadData];
+}
+- (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue { }
+
+- (IBAction)doneAddingBook:(UIStoryboardSegue *)segue {
+    RELAddBookController *controller = segue.sourceViewController;
+    [self addBookWithDictionary:controller.bookInfo];
+}
+- (IBAction)cancelAddingBook:(UIStoryboardSegue *)segue { }
+
+
 #pragma mark - UIViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    self.title = self.dataSource.readingList.title;
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"AddBook"])
-    {
-        UINavigationController *navController = segue.destinationViewController;
-        RELAddBookController *controller = navController.childViewControllers.firstObject;
-        
-        controller.completionBlock = ^(NSDictionary *bookInfo) {
-            [self addBookWithDictionary:bookInfo];
-        };
-    }
-    else
+    if ([segue.identifier isEqualToString:@"ViewBook"])
     {
         RELViewBookController *controller = segue.destinationViewController;
         controller.book = [self.dataSource bookAtIndexPath:self.tableView.indexPathForSelectedRow];
@@ -68,17 +76,5 @@
                                   animated:YES];
 }
 
-
-#pragma mark - Unwind Segues
-
-- (IBAction)doneEditingBook:(UIStoryboardSegue *)segue {
-    // Save data source and refresh table view
-    [self.dataSource save];
-    [self.tableView reloadData];
-}
-- (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue { }
-
-- (IBAction)doneAddingBook:(UIStoryboardSegue *)segue { }
-- (IBAction)cancelAddingBook:(UIStoryboardSegue *)segue { }
 
 @end

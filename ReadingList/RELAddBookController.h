@@ -12,7 +12,6 @@
 
 @interface RELAddBookController : UITableViewController
 
-@property (readonly, nonatomic) Book *book;
-@property (strong, nonatomic) void (^completionBlock)(NSDictionary *bookDict);
+@property (readonly, nonatomic) NSDictionary *bookInfo;
 
 @end
